@@ -150,7 +150,7 @@ require (
 	go.opentelemetry.io/collector v0.54.0
 	go.opentelemetry.io/collector/pdata v0.54.0
 	go.uber.org/multierr v1.8.0
-	go.uber.org/zap v1.21.0
+	go.uber.org/zap v1.22.0
 	golang.org/x/sys v0.0.0-20220610221304-9f5ed59c137d
 )
 
