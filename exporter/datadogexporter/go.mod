@@ -23,7 +23,7 @@ require (
 	go.opentelemetry.io/collector/semconv v0.54.0
 	go.uber.org/multierr v1.8.0
 	go.uber.org/zap v1.21.0
-	gopkg.in/DataDog/dd-trace-go.v1 v1.38.1
+	gopkg.in/DataDog/dd-trace-go.v1 v1.42.0
 	gopkg.in/zorkian/go-datadog-api.v2 v2.30.0
 	k8s.io/apimachinery v0.24.2
 	k8s.io/client-go v0.24.2
@@ -95,9 +95,9 @@ require (
 	go.opentelemetry.io/otel/metric v0.30.0 // indirect
 	go.opentelemetry.io/otel/trace v1.7.0 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
-	golang.org/x/net v0.0.0-20220412020605-290c469a71a5 // indirect
+	golang.org/x/net v0.0.0-20220722155237-a158d28d115b // indirect
 	golang.org/x/oauth2 v0.0.0-20220411215720-9780585627b5 // indirect
-	golang.org/x/sys v0.0.0-20220503163025-988cb79eb6c6 // indirect
+	golang.org/x/sys v0.0.0-20220722155257-8c9f86f7a55f // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/time v0.0.0-20220411224347-583f2d630306 // indirect
