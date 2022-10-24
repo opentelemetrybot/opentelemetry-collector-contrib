@@ -16,7 +16,7 @@ require (
 	golang.org/x/exp v0.0.0-20200331195152-e8c3332aa8e5 // indirect
 	golang.org/x/sys v0.0.0-20220412211240-33da011f77ad
 	golang.org/x/text v0.3.7
-	gonum.org/v1/gonum v0.11.0
+	gonum.org/v1/gonum v0.12.0
 	gopkg.in/yaml.v2 v2.4.0
 	k8s.io/api v0.24.2
 	k8s.io/apimachinery v0.24.2
