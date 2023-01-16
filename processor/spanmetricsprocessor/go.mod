@@ -20,7 +20,7 @@ require (
 	go.opentelemetry.io/collector/receiver/otlpreceiver v0.67.1-0.20221212050940-28cd74963b9d
 	go.opentelemetry.io/collector/semconv v0.67.1-0.20221212050940-28cd74963b9d
 	go.uber.org/zap v1.24.0
-	google.golang.org/grpc v1.51.0
+	google.golang.org/grpc v1.52.0
 )
 
 require (
