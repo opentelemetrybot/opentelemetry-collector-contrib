@@ -6,13 +6,13 @@ require (
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da
 	github.com/google/uuid v1.3.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.72.0
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.2
 	go.opencensus.io v0.24.0
 	go.opentelemetry.io/collector v0.72.0
 	go.opentelemetry.io/collector/component v0.72.0
 	go.opentelemetry.io/collector/confmap v0.72.0
 	go.opentelemetry.io/collector/consumer v0.72.0
-	go.opentelemetry.io/collector/pdata v1.0.0-rc6
+	go.opentelemetry.io/collector/pdata v1.0.0-rc7
 	go.opentelemetry.io/otel/trace v1.13.0
 	go.uber.org/atomic v1.10.0
 	go.uber.org/goleak v1.2.1
