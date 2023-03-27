@@ -5,11 +5,11 @@ go 1.19
 require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.72.0
 	github.com/shirou/gopsutil/v3 v3.23.1
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.2
 	github.com/testcontainers/testcontainers-go v0.18.0
 	go.opentelemetry.io/collector v0.72.0
 	go.opentelemetry.io/collector/component v0.72.0
-	go.opentelemetry.io/collector/confmap v0.72.0
+	go.opentelemetry.io/collector/confmap v0.74.0
 	go.opentelemetry.io/collector/consumer v0.72.0
 	go.opentelemetry.io/collector/pdata v1.0.0-rc6
 	go.opentelemetry.io/collector/receiver/otlpreceiver v0.72.0
@@ -62,14 +62,14 @@ require (
 	github.com/tklauser/numcpus v0.6.0 // indirect
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
 	go.opencensus.io v0.24.0 // indirect
-	go.opentelemetry.io/collector/featuregate v0.72.0 // indirect
+	go.opentelemetry.io/collector/featuregate v0.74.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.39.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.39.0 // indirect
 	go.opentelemetry.io/otel v1.13.0 // indirect
 	go.opentelemetry.io/otel/metric v0.36.0 // indirect
 	go.opentelemetry.io/otel/trace v1.13.0 // indirect
 	go.uber.org/goleak v1.2.1 // indirect
-	go.uber.org/multierr v1.9.0 // indirect
+	go.uber.org/multierr v1.10.0 // indirect
 	golang.org/x/net v0.7.0 // indirect
 	golang.org/x/sys v0.5.0 // indirect
 	golang.org/x/text v0.7.0 // indirect
