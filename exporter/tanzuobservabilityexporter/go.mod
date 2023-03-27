@@ -6,12 +6,12 @@ require (
 	github.com/cenkalti/backoff/v4 v4.2.0
 	github.com/google/uuid v1.3.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.72.0
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.2
 	github.com/wavefronthq/wavefront-sdk-go v0.11.0
 	go.opentelemetry.io/collector v0.72.0
 	go.opentelemetry.io/collector/component v0.72.0
 	go.opentelemetry.io/collector/pdata v1.0.0-rc6
-	go.opentelemetry.io/collector/semconv v0.72.0
+	go.opentelemetry.io/collector/semconv v0.74.0
 	go.uber.org/atomic v1.10.0
 	go.uber.org/multierr v1.9.0
 	go.uber.org/zap v1.24.0
