@@ -1,5 +1,8 @@
 name: Auto-update JMX metrics component
 
+permissions:
+  contents: read
+
 on:
   schedule:
     # Daily at 01:30 (UTC)

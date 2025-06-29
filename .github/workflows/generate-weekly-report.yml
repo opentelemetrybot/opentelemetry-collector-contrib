@@ -2,6 +2,10 @@
 # More details in https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/24672
 
 name: 'Generate Weekly Report'
+
+permissions:
+  contents: read
+
 on:
   workflow_dispatch: 
   schedule:
@@ -12,6 +16,8 @@ jobs:
   get_issues:
     runs-on: ubuntu-24.04
     if: ${{ github.repository_owner == 'open-telemetry' }}
+    permissions:
+      issues: write
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
       - run: npm install js-yaml
