@@ -1,5 +1,8 @@
 name: Automation - Prepare Release
 
+permissions:
+  contents: read
+
 on:
   workflow_dispatch:
     # Determine the version number that will be assigned to the release. During the beta phase, we increment

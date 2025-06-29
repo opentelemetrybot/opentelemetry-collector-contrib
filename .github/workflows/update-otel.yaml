@@ -1,4 +1,8 @@
 name: 'Update contrib to the latest core source'
+
+permissions:
+  contents: read
+
 on:
   workflow_dispatch:
   schedule:
