@@ -13,7 +13,8 @@ on:
       - "**/README.md"
   merge_group:
 
-permissions: contents: read
+permissions:
+  contents: read
 
 env:
   # Make sure to exit early if cache segment download times out after 2 minutes.

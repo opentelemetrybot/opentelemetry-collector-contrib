@@ -3,7 +3,8 @@ on:
   schedule:
     - cron: "27 3 * * 1-5" # Run at an arbitrary time on weekdays.
 
-permissions: contents: read
+permissions:
+  contents: read
 
 jobs:
   mark-issues-as-stale:
