@@ -8,10 +8,15 @@ on:
     types:
       - closed
 
+permissions:
+  contents: read
+
 jobs:
   update-pr:
     if: github.event.pull_request.merged
     runs-on: ubuntu-24.04
+    permissions:
+      issues: write
     steps:
       - uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7
         with:
