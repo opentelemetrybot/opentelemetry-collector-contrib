@@ -1,4 +1,8 @@
 name: "Close stale issues and pull requests"
+
+permissions:
+  contents: read
+
 on:
   workflow_dispatch:
   schedule:
@@ -6,6 +10,9 @@ on:
 
 jobs:
   stale:
+    permissions:
+      issues: write
+      pull-requests: write
     runs-on: ubuntu-24.04
     env:
       GH_TOKEN: ${{ github.token }}

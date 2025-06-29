@@ -1,5 +1,8 @@
 name: e2e-tests-windows
 
+permissions:
+  contents: read
+
 on:
   push:
     branches:

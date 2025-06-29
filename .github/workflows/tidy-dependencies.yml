@@ -1,4 +1,8 @@
 name: "Project: Tidy"
+
+permissions:
+  contents: read
+
 on:
   pull_request_target:
     types: [opened, ready_for_review, synchronize, reopened, labeled, unlabeled]

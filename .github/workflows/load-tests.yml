@@ -1,5 +1,8 @@
 name: load-tests
 
+permissions:
+  contents: read
+
 on:
   push:
     tags:
