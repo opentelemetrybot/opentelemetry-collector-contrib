@@ -7,10 +7,8 @@ on:
       - ./.github/workflows/generate-component-labels.yml
       - ./.github/workflows/scripts/generate-component-labels.sh
     workflow_dispatch:
-
 permissions:
   contents: read
-
 jobs:
   generate-component-labels:
     permissions:
