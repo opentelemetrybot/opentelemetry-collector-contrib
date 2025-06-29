@@ -8,8 +8,12 @@ on:
     types:
       - closed
 
+permissions: contents: read
+
 jobs:
   update-pr:
+    permissions:
+      issues: write
     if: github.event.pull_request.merged
     runs-on: ubuntu-24.04
     steps:
