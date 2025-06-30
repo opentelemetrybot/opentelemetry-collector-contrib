@@ -8,8 +8,14 @@ on:
     types:
       - closed
 
+permissions:
+  contents: read
+
 jobs:
   update-pr:
+    permissions:
+      contents: read
+      pull-requests: write # required for adding milestones to PRs
     if: github.event.pull_request.merged
     runs-on: ubuntu-24.04
     steps:
