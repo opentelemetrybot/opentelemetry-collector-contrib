@@ -8,6 +8,8 @@ permissions:
 
 jobs:
   mark-issues-as-stale:
+    permissions:
+      issues: write # required for marking issues as stale
     runs-on: ubuntu-24.04
     if: ${{ github.repository_owner == 'open-telemetry' }}
     steps:
