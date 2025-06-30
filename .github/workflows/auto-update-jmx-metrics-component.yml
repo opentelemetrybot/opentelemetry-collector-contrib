@@ -11,6 +11,8 @@ permissions:
 
 jobs:
   check-versions:
+    permissions:
+      pull-requests: read
     runs-on: ubuntu-24.04
     outputs:
       latest-version: ${{ steps.check-versions.outputs.latest-version }}
