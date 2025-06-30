@@ -7,7 +7,7 @@ on:
   merge_group:
   pull_request:
 
-permissions: read-all
+permissions: contents: read
 
 env:
   TEST_RESULTS: testbed/tests/results/junit/results.xml
