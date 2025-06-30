@@ -8,10 +8,15 @@ on:
       - ./.github/workflows/scripts/generate-component-labels.sh
     workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   generate-component-labels:
     runs-on: ubuntu-24.04
     if: ${{ github.repository_owner == 'open-telemetry' }}
+    permissions:
+      issues: write
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
 
