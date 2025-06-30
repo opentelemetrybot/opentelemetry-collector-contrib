@@ -9,6 +9,8 @@ permissions:
 
 jobs:
   update-otel:
+    permissions:
+      issues: write
     runs-on: ubuntu-24.04
     if: ${{ github.repository_owner == 'open-telemetry' }}
     steps:

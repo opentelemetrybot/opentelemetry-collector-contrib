@@ -9,6 +9,9 @@ permissions:
 
 jobs:
   stale:
+    permissions:
+      issues: write
+      pull-requests: write
     runs-on: ubuntu-24.04
     env:
       GH_TOKEN: ${{ github.token }}
