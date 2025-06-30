@@ -7,7 +7,8 @@ on:
   push:
     paths:
       - '.github/lychee.toml'
-
+permissions:
+  contents: read
 jobs:
   check-lychee-config:
     runs-on: ubuntu-latest
