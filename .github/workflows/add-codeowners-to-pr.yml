@@ -10,7 +10,7 @@ permissions: read-all
 jobs:
   add-owners-to-pr:
     permissions:
-      pull-requests: write
+      pull-requests: write # for requesting reviewers on PRs
     runs-on: ubuntu-24.04
     if: ${{ github.actor != 'dependabot[bot]' && github.repository_owner == 'open-telemetry' }}
     steps:

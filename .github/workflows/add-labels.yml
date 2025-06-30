@@ -9,7 +9,7 @@ jobs:
   add-labels:
     if: ${{ !github.event.issue.pull_request && startsWith(github.event.comment.body, '/label') && github.repository_owner == 'open-telemetry' }}
     permissions:
-      issues: write
+      issues: write # for adding and removing labels from issues
 
     runs-on: ubuntu-24.04
     steps:

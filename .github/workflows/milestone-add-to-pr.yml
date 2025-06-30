@@ -13,6 +13,8 @@ permissions:
 
 jobs:
   update-pr:
+    permissions:
+      issues: write # for adding milestones to PRs
     if: github.event.pull_request.merged
     runs-on: ubuntu-24.04
     steps:
