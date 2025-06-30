@@ -8,6 +8,9 @@ on:
       - ./.github/workflows/scripts/generate-component-labels.sh
     workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   generate-component-labels:
     runs-on: ubuntu-24.04
