@@ -3,7 +3,7 @@ on:
   pull_request_target:
     types: [labeled]
 
-permissions: read-all
+permissions: contents: read
 
 jobs:
   ping-owners:

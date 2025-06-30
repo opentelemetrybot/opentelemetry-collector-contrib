@@ -14,7 +14,7 @@ on:
   merge_group:
     types: [checks_requested]
 
-permissions: read-all
+permissions: contents: read
 
 jobs:
   check-merge-freeze:

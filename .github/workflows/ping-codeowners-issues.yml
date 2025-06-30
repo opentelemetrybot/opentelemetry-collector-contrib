@@ -3,7 +3,7 @@ on:
   issues:
     types: [labeled]
 
-permissions: read-all
+permissions: contents: read
 
 jobs:
   ping-owners:

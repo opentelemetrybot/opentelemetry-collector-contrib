@@ -6,7 +6,7 @@ on:
     paths-ignore:
       - "**/README.md"
 
-permissions: read-all
+permissions: contents: read
 
 jobs:
   CodeQL-Build:
