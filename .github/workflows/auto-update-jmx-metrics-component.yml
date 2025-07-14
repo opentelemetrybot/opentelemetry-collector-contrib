@@ -35,7 +35,7 @@ jobs:
           fi
 
           matches=$(gh pr list \
-                        --author otelbot[bot] \
+                        --author opentelemetrybot \
                         --state open \
                         --search "in:title \"Add JMX metrics gatherer version $latest_version\"")
           if [ ! -z "$matches" ]
@@ -85,32 +85,6 @@ jobs:
         with:
           app-id: ${{ vars.OTELBOT_APP_ID }}
           private-key: ${{ secrets.OTELBOT_PRIVATE_KEY }}
-      - name: Create pull request against main
-        env:
-          VERSION: ${{ needs.check-versions.outputs.latest-version }}
-          # not using secrets.GITHUB_TOKEN since pull requests from that token do not run workflows
-          GH_TOKEN: ${{ steps.otelbot-token.outputs.token }}
-        env:
-          VERSION: ${{ needs.check-versions.outputs.latest-version }}
-        run: |
-          if [[ ! $VERSION =~ -alpha$ ]]; then
-            echo currently expecting jmx metrics version to end with "-alpha"
-            exit 1
-          fi
-
-          version=${VERSION//-alpha/}
-          hash=$(curl -L https://github.com/open-telemetry/opentelemetry-java-contrib/releases/download/v$version/opentelemetry-jmx-metrics.jar \
-                         | sha256sum \
-                         | cut -d ' ' -f 1)
-
-          # NOTE there are intentional tab characters in the line below
-          sed -i "/^var jmxMetricsGathererVersions/a \	\"$hash\": {\n		version: \"$VERSION\",\n		jar:     \"JMX metrics gatherer\",\n	}," receiver/jmxreceiver/supported_jars.go
-          git diff
-
-      - name: Use CLA approved github bot
-        run: |
-          git config user.name otelbot
-          git config user.email 197425009+otelbot@users.noreply.github.com
 
       - name: Create pull request against main
         env:
