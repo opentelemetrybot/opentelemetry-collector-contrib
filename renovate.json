@@ -11,9 +11,10 @@
     "on tuesday"
   ],
   "extends": [
-    "config:recommended",
+    "config:best-practices",
     "customManagers:githubActionsVersions",
-    "helpers:pinGitHubActionDigests"
+    "helpers:pinGitHubActionDigests",
+    "helpers:pinGitHubActionDigestsToSemver"
   ],
   "ignorePaths": [
     "**/receiver/apachesparkreceiver/testdata/integration/Dockerfile.apache-spark",
