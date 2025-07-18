@@ -10,6 +10,7 @@ permissions:
 jobs:
   update-otel:
     permissions:
+      contents: write
       issues: write # required for creating failure issues
     runs-on: ubuntu-24.04
     if: ${{ github.repository_owner == 'open-telemetry' }}
